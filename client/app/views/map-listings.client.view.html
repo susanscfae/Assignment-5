@@ -10,8 +10,8 @@
   -->
 
 <div id="map_canvas" ng-controller="ListingsController" ng-init="find()">
-    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options" bounds="map.bounds">
-        <ui-gmap-markers models="listings" coords="'coordinates'" icon="'icon'" click="onClick" idkey="'_id'">
+    <ui-gmap-google-map center="map.center" zoom="map.zoom">
+        <ui-gmap-markers models="listings" coords="'coordinates'" icon="'icon'" idkey="'_id'">
             <ui-gmap-windows show="show">
                 <div ng-non-bindable>{{name}}, {{code}}, {{address}}</div>
             </ui-gmap-windows>
